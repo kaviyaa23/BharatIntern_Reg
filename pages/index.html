@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS for Harry Potter Theme -->
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dark background for a magical feel */
+            font-family: 'Garamond', serif; /* A classic font similar to the one in Harry Potter */
+            color: #f1c40f; /* Gold color for text */
+        }
+        .card {
+            background-color: #7f0909; /* Gryffindor deep red */
+            border: 2px solid #f1c40f; /* Gold border */
+        }
+        .card-header {
+            background-color: #b71c1c; /* Slightly lighter red */
+            color: #f1c40f; /* Gold text */
+        }
+        .btn-primary {
+            background-color: #f1c40f; /* Gold button */
+            border-color: #7f0909; /* Red border */
+            color: #7f0909; /* Red text */
+        }
+        .btn-primary:hover {
+            background-color: #b71c1c; /* Red button on hover */
+            color: #f1c40f; /* Gold text on hover */
+            border-color: #f1c40f; /* Gold border on hover */
+        }
+        a {
+            color: #f1c40f; /* Gold links */
+        }
+        a:hover {
+            color: #b71c1c; /* Red links on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h3>Register</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="/register" method="POST">
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email ID</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Register</button>
+                        </form>
+                    </div>
+                    <div class="card-footer text-center">
+                        <small>Already have an account? <a href="/login">Login here</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
